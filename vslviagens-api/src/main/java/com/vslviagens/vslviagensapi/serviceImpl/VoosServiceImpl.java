@@ -6,7 +6,6 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.vslviagens.vslviagensapi.exception.CampoVazioException;
 import com.vslviagens.vslviagensapi.exception.RecursoExistenteException;
 import com.vslviagens.vslviagensapi.exception.RecursoNaoEncontradoException;
 import com.vslviagens.vslviagensapi.model.Paises;
