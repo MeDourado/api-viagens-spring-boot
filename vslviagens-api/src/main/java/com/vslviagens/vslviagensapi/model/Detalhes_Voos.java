@@ -21,9 +21,9 @@ public class Detalhes_Voos {
 
     private double preco;
 
-    private double passageiros;
+    private int passageiros;
 
-    public Detalhes_Voos(Long id, Voos voo, ClasseVooRole classe, double preco, double passageiros) {
+    public Detalhes_Voos(Long id, Voos voo, ClasseVooRole classe, double preco, int passageiros) {
         this.id = id;
         this.voo = voo;
         this.classe = classe;
@@ -63,11 +63,11 @@ public class Detalhes_Voos {
         this.preco = preco;
     }
 
-    public double getPassageiros() {
+    public int getPassageiros() {
         return passageiros;
     }
 
-    public void setPassageiros(double passageiros) {
+    public void setPassageiros(int passageiros) {
         this.passageiros = passageiros;
     }
 

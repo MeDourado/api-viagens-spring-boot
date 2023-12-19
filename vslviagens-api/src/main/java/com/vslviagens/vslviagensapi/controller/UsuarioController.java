@@ -19,8 +19,6 @@ import com.vslviagens.vslviagensapi.dto.UsuarioDTO;
 import com.vslviagens.vslviagensapi.model.Usuarios;
 import com.vslviagens.vslviagensapi.repository.UsuariosRepository;
 
-import jakarta.validation.Valid;
-
 @RestController
 @RequestMapping("auth")
 public class UsuarioController {
@@ -35,7 +33,7 @@ public class UsuarioController {
     private UsuariosRepository usuariosRepository;
 
     @PostMapping("/logar")
-    public ResponseEntity<?> logar(@RequestBody @Valid UsuarioDTO data) {
+    public ResponseEntity<?> logar(@RequestBody UsuarioDTO data) {
         var usuario = new UsernamePasswordAuthenticationToken(data.email(),
                 data.senha());
         try {

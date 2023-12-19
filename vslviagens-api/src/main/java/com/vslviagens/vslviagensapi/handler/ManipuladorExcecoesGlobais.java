@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import com.vslviagens.vslviagensapi.exception.CampoVazioException;
 import com.vslviagens.vslviagensapi.exception.RecursoExistenteException;
+import com.vslviagens.vslviagensapi.exception.RecursoInvalidoException;
 import com.vslviagens.vslviagensapi.exception.RecursoNaoEncontradoException;
 
 @RestControllerAdvice
@@ -16,6 +17,11 @@ public class ManipuladorExcecoesGlobais {
     public ResponseEntity<Object> handleRecursoNãoEncontradoException(RecursoNaoEncontradoException ex) {
 
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
+    }
+
+    @ExceptionHandler(RecursoInvalidoException.class)
+    public ResponseEntity<Object> handleRecursoInvalidoException(RecursoInvalidoException ex) {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
     }
 
     @ExceptionHandler(CampoVazioException.class)

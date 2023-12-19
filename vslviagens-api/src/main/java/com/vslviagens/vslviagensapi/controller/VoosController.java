@@ -18,8 +18,6 @@ import com.vslviagens.vslviagensapi.exception.CampoVazioException;
 import com.vslviagens.vslviagensapi.model.Voos;
 import com.vslviagens.vslviagensapi.service.VoosService;
 
-import jakarta.validation.Valid;
-
 @RestController
 @RequestMapping("/voos")
 public class VoosController {
@@ -44,7 +42,7 @@ public class VoosController {
     }
 
     @PostMapping
-    public ResponseEntity<?> cadastrarVoos(@Valid @RequestBody Voos voo) {
+    public ResponseEntity<?> cadastrarVoos(@RequestBody Voos voo) {
 
         if (voo.getCodigo().isEmpty()) {
             throw new CampoVazioException("O código não pode estar vazio.");
