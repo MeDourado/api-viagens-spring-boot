@@ -29,7 +29,7 @@ A API fornece as seguintes rotas:
 {
     "email": "teste@example.com",
     "senha": "123"
-}`
+}
 ```
 
 - **Cadastrar Usuário**: Registro de novos usuários.
@@ -42,8 +42,8 @@ A API fornece as seguintes rotas:
 {
     "nome": "teste",
     "email": "teste@example.com", "senha": "123",
-    "cargo": "ADMIN" }
-
+    "cargo": "ADMIN"
+}
 ```
 
 - **Listar Países**: Obter a lista de países.
@@ -176,6 +176,25 @@ Recomendamos o uso do Insomnia para testar os endpoints. Siga as etapas abaixo:
 2. Importe o arquivo `testeApi.json` disponobilizado para o Insomnia na pasta Insomnia_Json.
 3. Acesse os endpoints e envie as requisições conforme necessário.
 
+## Futuras Melhorias
+
+#### Sistema de Envio de E-mails
+
+Ira ser incluido confirmações de reserva, atualizações de status (reserva confirmada, reservada em processo, reserva cancelada)
+
+#### Desenvolvimento do Frontend
+
+Desenvolver a interface do usuário do sistema, melhorando a usabilidade e a estética
+.
+
+#### Aprimoramento da Segurança
+
+Reforçar as medidas de segurança existentes e implementar práticas adicionais para proteger os dados dos usuários.
+
+#### Entre outros
+
+A api está em progresso e terá constantes atualizações e melhorias.
+
 ## Contribuição
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir pull requests para melhorias na API.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir pull requests para melhorias na API ou enviar sugestões para o email mariaeduarda.s.dourado@gmail.com
