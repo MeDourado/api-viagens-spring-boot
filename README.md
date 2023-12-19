@@ -2,6 +2,15 @@
 
 Bem-vindo à API da VSL Viagens, uma agência de viagens especializada em reservas de voos.
 
+## Seções Principais
+
+1. [Configuração do Ambiente](#configuração-do-ambiente)
+2. [Execução da Aplicação](#execução-da-aplicação)
+3. [Endpoints Disponíveis](#endpoints-disponíveis)
+4. [Testando a API](#testando-a-api)
+5. [Futuras Melhorias](#futuras-melhorias)
+6. [Contribuição](#contribuição)
+
 ## Descrição
 
 Esta API oferece funcionalidades para gerenciar reservas de voos, clientes, detalhes de voos, cadastro de clientes com autenticação e criptografia de senhas.
