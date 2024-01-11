@@ -182,7 +182,7 @@ A API fornece as seguintes rotas:
 Recomendamos o uso do Insomnia para testar os endpoints. Siga as etapas abaixo:
 
 1. Baixe e instale o Insomnia: [Insomnia](https://insomnia.rest/download).
-2. Importe o arquivo `testeApi.json` disponobilizado para o Insomnia na pasta Insomnia_Json.
+2. Importe o arquivo `testeApi.json` disponibilizadobilizado para o Insomnia na pasta Insomnia_Json.
 3. Acesse os endpoints e envie as requisições conforme necessário.
 
 ## Futuras Melhorias
